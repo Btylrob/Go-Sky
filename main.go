@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 
 	"github.com/nexidian/gocliselect"
 )
@@ -24,17 +25,13 @@ func main() {
 }
 
 func bsLogo() string {
-	fmt.Print(
+	b, err := os.ReadFile("asciiGsky.txt")
+	if err != nil {
+		fmt.Println(err)
+		return ""
+	}
 
+	fmt.Println(string(b))
 
-		██████╗  ██████╗ ███████╗██╗  ██╗██╗   ██╗
-		██╔════╝ ██╔═══██╗██╔════╝██║ ██╔╝╚██╗ ██╔╝
-		██║  ███╗██║   ██║███████╗█████╔╝  ╚████╔╝ 
-		██║   ██║██║   ██║╚════██║██╔═██╗   ╚██╔╝  
-		╚██████╔╝╚██████╔╝███████║██║  ██╗   ██║   
-		 ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   
-		
-		
-
-	)
+	return string(b)
 }
