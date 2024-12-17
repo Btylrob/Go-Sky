@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/fatih/color"
 	"github.com/nexidian/gocliselect"
 )
 
@@ -33,4 +34,14 @@ func bsLogo() string {
 	fmt.Println(string(b))
 
 	return string(b)
+}
+
+func help() {
+
+	Bold := color.New(color.Bold)
+
+	color.Blue("General FAQ: ")
+	Bold.Printf("Usage: BlueSky Terminal Posting  Applicaction using Go and BlueSky API \nGithubID: Btylrob\nRepository\n")
+	color.Blue("Options:")
+
 }
