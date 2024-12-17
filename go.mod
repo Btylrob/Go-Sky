@@ -5,6 +5,7 @@ go 1.19
 require (
 	github.com/bluesky-social/indigo v0.0.0-20230504025040-8915cccc3319 // indirect
 	github.com/buger/goterm v1.0.3 // indirect
+	github.com/charmbracelet/bubbles v0.20.0 // indirect
 	github.com/fatih/color v1.18.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang-jwt/jwt/v5 v5.0.0 // indirect
