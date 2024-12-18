@@ -11,13 +11,12 @@ import (
 )
 
 func main() {
+	CallClear()
 
 	bsLogo()
 
 	menu := gocliselect.NewMenu("Welcome to GoSky")
-	menu.AddItem("Post", "red")
-	menu.AddItem("Reply", "blue")
-	menu.AddItem("Quote", "green")
+	menu.AddItem("Timeline", "red")
 	menu.AddItem("Help", "Help")
 
 	choice := menu.Display()
